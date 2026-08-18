@@ -179,16 +179,16 @@ const styles = StyleSheet.create({
   },
 
   logo: {
-    width: "90%",
-    height: 260,
-    marginTop: -40,
+ width: 300,
+    height: 250,
+    marginTop: -20,
   },
 
   line: {
     width: "100%",
     height: 1,
     backgroundColor: "#888888",
-    marginTop: -69,
+    marginTop: -20,
     marginBottom: 25,
   },
 
@@ -228,20 +228,21 @@ const styles = StyleSheet.create({
     fontWeight: "600",
   },
 
+ 
   button: {
     width: "100%",
     height: 45,
-    backgroundColor: "#ff8000",
-    borderRadius: 9,
+    backgroundColor: "#ff7300",
+      borderRadius: 5,
     justifyContent: "center",
     alignItems: "center",
-    marginTop: 30,
+    marginTop: 50,
   },
 
   buttonText: {
     color: "#000000",
-    fontSize: 14,
-    fontWeight: "600",
+    fontSize: 13,
+    fontWeight: "500",
   },
 
   resendTitle: {

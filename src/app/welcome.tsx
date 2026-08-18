@@ -58,9 +58,9 @@ const styles = StyleSheet.create({
   },
 
   logo: {
-    width: 340,
-    height: 330,
-    marginTop: 20,
+ width: 320,
+    height: 270,
+    marginTop: 30,
   },
 
   description: {
@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
       fontSize: 25,
     fontWeight: "bold",
-    marginTop: 100,
+    marginTop: 20,
   },
 
   buttons: {
@@ -81,14 +81,15 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
 
+
   primaryButton:{
     width: "89%",
-    height: 32,
-    backgroundColor: "#ff8400",
+    height: 45,
+    backgroundColor: "#ff7300",
     borderRadius: 5,
     justifyContent: "center",
     alignItems: "center",
-    top: -20,
+    top: -18,
     paddingVertical: 17,
     marginBottom: 15,
 

@@ -29,6 +29,8 @@ export default function TrocarSenha() {
         resizeMode="contain"
       />
 
+      <View style={styles.line} />
+
       {/* Título */}
       <Text style={styles.description}>
         Crie sua nova senha
@@ -107,9 +109,18 @@ const styles = StyleSheet.create({
   },
 
   logo: {
-    width: 340,
-    height: 330,
-    marginTop: -40,
+    width: 300,
+    height: 250,
+    marginTop: -20,
+  },
+
+
+  line: {
+    width: "100%",
+    height: 1,
+    backgroundColor: "#888888",
+    marginTop: -20,
+    marginBottom: 25,
   },
 
   description: {
@@ -117,8 +128,10 @@ const styles = StyleSheet.create({
     color: "#888888",
     fontSize: 22,
     textAlign: "left",
-    marginTop: -80,
+    marginTop: 10,
   },
+
+
 
   sub: {
     width: "100%",
@@ -176,11 +189,11 @@ const styles = StyleSheet.create({
   button: {
     width: "100%",
     height: 45,
-    backgroundColor: "#ff8000",
-    borderRadius: 9,
+    backgroundColor: "#ff7300",
+   borderRadius: 5,
     justifyContent: "center",
     alignItems: "center",
-    marginTop: 37,
+    marginTop: 50,
   },
 
   buttonText: {

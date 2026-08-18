@@ -76,7 +76,7 @@ export default function Cadastro() {
       {/* Botão confirmar */}
       <TouchableOpacity
         style={styles.button}
-        onPress={() => router.replace("/login")}
+        onPress={() => router.replace("/welcome")}
       >
         <Text style={styles.buttonText}>Confirmar</Text>
       </TouchableOpacity>
@@ -113,12 +113,11 @@ const styles = StyleSheet.create({
 
   description: {
     width: "100%",
-    color: "#7B7B7B",
+    color: "#888888",
     fontSize: 25,
-    fontWeight: "500",
     textAlign: "center",
-    marginTop: -25,
-    marginBottom: 50,
+    marginTop: -40,
+    marginBottom: 46,
   },
 
   inputsContainer: {
@@ -164,11 +163,11 @@ const styles = StyleSheet.create({
   button: {
     width: "100%",
     height: 45,
-    backgroundColor: "#FF810C",
-    borderRadius: 9,
+    backgroundColor: "#ff7300",
+  borderRadius: 5,
     justifyContent: "center",
     alignItems: "center",
-    marginTop: 37,
+    marginTop: 50,
   },
 
   buttonText: {

@@ -15,7 +15,7 @@ export default function Cadastro() {
       {/* Botão voltar */}
       <TouchableOpacity
         style={styles.back}
-        onPress={() => router.back()}
+      onPress={() => router.push("/cadastro")}
       >
         <Text style={styles.backText}>‹</Text>
       </TouchableOpacity>
@@ -69,7 +69,7 @@ export default function Cadastro() {
       {/* Botão finalizar */}
       <TouchableOpacity
         style={styles.button}
-        onPress={() => router.replace("/login")}
+        onPress={() => router.replace("/filtros")}
       >
         <Text style={styles.buttonText}>Finalizar</Text>
       </TouchableOpacity>
@@ -99,18 +99,18 @@ const styles = StyleSheet.create({
   },
 
   logo: {
-    width: "90%",
-    height: 220,
+    width: 340,
+    height: 260,
     marginTop: 20,
   },
 
   title: {
     width: "100%",
-    color: "#FFFFFF",
+    color: "#888888",
     fontSize: 25,
-    fontWeight: "500",
     textAlign: "center",
-    marginTop: -35,
+    marginTop: -40,
+    marginBottom: 46,
   },
 
   inputsContainer: {
@@ -121,7 +121,7 @@ const styles = StyleSheet.create({
     width: "100%",
     color: "#FFFFFF",
     fontSize: 14,
-    marginBottom: 8,
+    marginBottom: 10,
   },
 
   input: {
@@ -153,11 +153,11 @@ const styles = StyleSheet.create({
   button: {
     width: "100%",
     height: 45,
-    backgroundColor: "#ff9500",
-    borderRadius: 9,
+    backgroundColor: "#ff7300",
+      borderRadius: 5,
     justifyContent: "center",
     alignItems: "center",
-    marginTop: 20,
+    marginTop: 50,
   },
 
   buttonText: {

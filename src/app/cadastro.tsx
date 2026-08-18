@@ -152,8 +152,8 @@ const styles = StyleSheet.create({
     color: "#888888",
     fontSize: 25,
     textAlign: "center",
-    marginTop: -68,
-    marginBottom: 30,
+    marginTop: -40,
+    marginBottom: 20,
   },
 
   inputsContainer: {
@@ -175,30 +175,33 @@ const styles = StyleSheet.create({
   },
 
   dataContainer: {
-    width: "100%",
-    flexDirection: "row",
-    gap: 10,
-  },
+  width: "100%",
+  flexDirection: "row",
+  justifyContent: "space-between",
+  gap: 8,
+},
 
-  dataInput: {
-    flex: 1,
-    height: 40,
-    borderWidth: 1,
-    borderColor: "#A5A5A5",
-    borderRadius: 5,
-    backgroundColor: "#080808",
-    color: "#FFFFFF",
-    fontSize: 14,
-  },
+dataInput: {
+  width: "30%",
+  height: 40,
+  borderWidth: 1,
+  borderColor: "#A5A5A5",
+  borderRadius: 5,
+  backgroundColor: "#080808",
+  color: "#FFFFFF",
+  fontSize: 14,
+  textAlign: "center",
+},
+
 
   button: {
     width: "100%",
     height: 45,
-    backgroundColor: "#ff9500",
-    borderRadius: 9,
+    backgroundColor: "#ff7300",
+  borderRadius: 5,
     justifyContent: "center",
     alignItems: "center",
-    marginTop: 48,
+    marginTop: 50,
   },
 
   buttonText: {

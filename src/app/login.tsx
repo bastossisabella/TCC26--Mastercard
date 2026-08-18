@@ -103,16 +103,17 @@ const styles = StyleSheet.create({
   },
 
   logo: {
-    width: 280,
-    height: 240,
+  width: 300,
+    height: 250,
+    marginTop: -20,
   },
 
   description: {
-    color: "#747272",
+        width: "100%",
+    color: "#888888",
+    fontSize: 25,
     textAlign: "center",
-    fontSize: 20,
-    fontWeight: "normal",
-    marginTop: -59,
+    marginTop: -40,
     marginBottom: 100,
   },
 
@@ -132,18 +133,19 @@ const styles = StyleSheet.create({
   button: {
     width: "100%",
     height: 45,
-    backgroundColor: "#ff9500",
-    borderRadius: 9,
+    backgroundColor: "#ff7300",
+   borderRadius: 5,
     justifyContent: "center",
     alignItems: "center",
-    marginTop: 37,
+    marginTop: 50,
   },
 
   buttonText: {
     color: "#000000",
-    fontSize: 14,
-    fontWeight: "600",
+    fontSize: 13,
+    fontWeight: "500",
   },
+
 
   forgot: {
     color: "#FFFFFF",

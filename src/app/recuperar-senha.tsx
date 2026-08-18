@@ -102,16 +102,16 @@ const styles = StyleSheet.create({
   },
 
   logo: {
-    width: "90%",
-    height: 260,
-    marginTop: -40,
+    width: 300,
+    height: 250,
+    marginTop: -20,
   },
 
   line: {
     width: "100%",
     height: 1,
     backgroundColor: "#888888",
-    marginTop: -69,
+    marginTop: -20,
     marginBottom: 25,
   },
 
@@ -151,22 +151,21 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
 
+
   button: {
-    width: 50,
-    height: 50,
-    borderRadius: 25,
-    backgroundColor: "#EEFF00",
+    width: "100%",
+    height: 45,
+    backgroundColor: "#ff7300",
+      borderRadius: 5,
     justifyContent: "center",
     alignItems: "center",
-    alignSelf: "flex-end",
-    marginTop: 25,
+    marginTop: 50,
   },
 
   buttonText: {
     color: "#000000",
-    fontSize: 28,
+    fontSize: 13,
     fontWeight: "500",
-    lineHeight: 30,
   },
 
   privacyButton: {
