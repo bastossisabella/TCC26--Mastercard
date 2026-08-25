@@ -57,7 +57,10 @@ export default function Login() {
           autoCapitalize="none"
         />
 
-        <TouchableOpacity style={styles.button}>
+          <TouchableOpacity
+          style={styles.button}
+          onPress={() => router.push("/master")}
+        >
           <Text style={styles.buttonText}>
             Entrar
           </Text>
