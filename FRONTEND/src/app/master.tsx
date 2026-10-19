@@ -1,13 +1,19 @@
 import { router } from "expo-router";
 import { useEffect, useRef } from "react";
-import { Animated, Image, StyleSheet, View } from "react-native";
+import {
+  Animated,
+  Image,
+  StatusBar,
+  StyleSheet,
+  View,
+} from "react-native";
 
 export default function SplashScreen() {
   const opacity = useRef(new Animated.Value(0)).current;
   const scale = useRef(new Animated.Value(0.7)).current;
 
   useEffect(() => {
-    Animated.parallel([
+    const animacao = Animated.parallel([
       Animated.timing(opacity, {
         toValue: 1,
         duration: 800,
@@ -20,17 +26,27 @@ export default function SplashScreen() {
         tension: 40,
         useNativeDriver: true,
       }),
-    ]).start();
+    ]);
+
+    animacao.start();
 
     const timer = setTimeout(() => {
       router.replace("/inicio");
     }, 2800);
 
-    return () => clearTimeout(timer);
-  }, []);
+    return () => {
+      clearTimeout(timer);
+      animacao.stop();
+    };
+  }, [opacity, scale]);
 
   return (
     <View style={styles.container}>
+      <StatusBar
+        barStyle="light-content"
+        backgroundColor="#000000"
+      />
+
       <Animated.View
         style={{
           opacity,
@@ -50,7 +66,7 @@ export default function SplashScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#000",
+    backgroundColor: "#000000",
     justifyContent: "center",
     alignItems: "center",
   },
